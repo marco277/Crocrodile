@@ -1,0 +1,6 @@
+# Solo lo necesario para el motor UCI (sin lichess, sin docs, sin tests).
+# Esto hace el .exe mas pequeno y rapido.
+python-chess==1.999.1
+numpy==1.26.4
+requests==2.31.0
+urllib3==1.26.18
