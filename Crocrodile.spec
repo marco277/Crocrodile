@@ -28,11 +28,12 @@ a = Analysis(
     hooksconfig={},
     runtime_hooks=[],
     excludes=[
+        # OJO: no excluir stdlib que usan requests/urllib3/numpy
+        # (email, html, http, xml, unittest) o el .exe revienta al arrancar.
         "matplotlib", "mpl_toolkits", "PIL", "scipy",
         "sphinx", "sphinx_rtd_theme", "docutils",
         "pytest", "_pytest", "nose",
-        "tkinter", "Tkinter", "unittest",
-        "email", "html", "http.server", "xmlrpc",
+        "tkinter", "Tkinter",
         "pydoc", "doctest",
         "berserk",
         "colorama",
